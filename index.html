@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      header h1 {
+        margin: 0;
+        font-family: "Playfair Display", serif;
+        font-size: 2.5em;
+        text-align: center;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 15px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 5px 10px;
+        transition: background-color 0.3s;
+      }
+
+      nav ul li a:hover {
+        background-color: #555;
+        border-radius: 5px;
+      }
+
+      .section {
+        padding: 60px 0;
+      }
+
+      #about {
+        background-color: #fff;
+        text-align: center;
+        padding: 40px 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      #about h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+
+      #about p {
+        font-size: 1.2em;
+        margin: 0 auto;
+        max-width: 600px;
+      }
+
+      #projects {
+        background-color: #e0e0e0;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      #projects h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 2em;
+        margin-bottom: 40px;
+      }
+
+      .project {
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #fff;
+        transition: transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .project:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .project h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+
+      .project p {
+        font-size: 1.1em;
+      }
+
+      #contact {
+        background-color: #fff;
+        text-align: center;
+        padding: 40px 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      #contact h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+      }
+
+      .form-group textarea {
+        height: 150px;
+      }
+
+      button[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        transition: background-color 0.3s;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #555;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .fade-in {
+        animation: fadeIn 1.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="fade-in">
+      <div class="container">
+        <h1>My Portfolio</h1>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="about" class="section fade-in">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm Uday Verma, a passionate web developer. I love creating
+          beautiful and functional websites that provide great user experiences.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="section fade-in">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project">
+          <h3>Project 1</h3>
+          <p>
+            A web application that allows users to track their daily tasks and
+            improve productivity.
+          </p>
+        </div>
+        <div class="project">
+          <h3>Project 2</h3>
+          <p>
+            An e-commerce website designed with a focus on user-friendly
+            navigation and seamless checkout process.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section fade-in">
+      <div class="container">
+        <h2>Contact</h2>
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="fade-in">
+      <div class="container">
+        <p>&copy; 2024 Uday. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("Thank you for your message!");
+          this.reset();
+        });
+    </script>
+  </body>
+</html>
